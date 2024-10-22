@@ -9,8 +9,8 @@ namespace OOP_Oevelse_2
     internal class HighscoreList
     {
 
-        private static Score[] scores = new Score[10] /*{ new Score("" , 0) , new Score("", 0), new Score("", 0), new Score("", 0), new Score("", 0), new Score("", 0), new Score("", 0), new Score("", 0), new Score("", 0), new Score("", 0) }*/;
-        
+        private static Score[] scores = new Score[10];
+
         public static Score[] GetScores()
         {
             return scores;
@@ -21,28 +21,29 @@ namespace OOP_Oevelse_2
             {
                 if (i == scores.Length)
                 {
-                    Console.WriteLine("No more room for new highscores");
+                    Array.Resize<Score>(ref scores, scores.Length + 1);
+                    scores[i] = score;
                     break;
                 }
-                else if (GetScores() == null)
+                else if (scores[i] == null)
                 {
                     scores[i] = score;
                     break;
                 }
-                /*
-                else if (scores[i].Points.Equals(0))
-                {
-                    scores[i] = score;
-                    break;
-                }
-                */
             }
         }
         public static void PrintToScreen()
         {
             foreach (var score in scores)
             {
-                Console.WriteLine(score.Name + " " + score.Points);
+                if (score == null)
+                {
+                    continue;
+                }
+                else
+                {
+                    Console.WriteLine(score);
+                }
             }
         }
     }

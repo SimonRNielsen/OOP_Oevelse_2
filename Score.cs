@@ -19,5 +19,11 @@ namespace OOP_Oevelse_2
 
         public int Points { get => points; set => points = value; }
         public string Name { get => name; set => name = value; }
+        
+        public override string ToString()
+        {
+            return $"{name} : {points}";
+        }
+        
     }
 }

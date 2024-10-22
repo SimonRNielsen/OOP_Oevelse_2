@@ -21,7 +21,11 @@ namespace OOP_Oevelse_2
             HighscoreList.AddScore(new Score("Simon", 9000));
             HighscoreList.AddScore(new Score("Simon", 10000));
             HighscoreList.AddScore(new Score("Simon", 11000));
+            HighscoreList.AddScore(new Score("Simon", 12000));
             HighscoreList.PrintToScreen();
+            Console.WriteLine();
+            Score myScore = new Score("Simon", 42);
+            Console.WriteLine(myScore);
             Console.ReadKey();
         }
     }
