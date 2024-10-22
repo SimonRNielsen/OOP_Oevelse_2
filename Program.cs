@@ -10,6 +10,7 @@ namespace OOP_Oevelse_2
     {
         static void Main(string[] args)
         {
+            /* Highscoresystem data
             HighscoreList.AddScore(new Score("Simon", 1000));
             HighscoreList.AddScore(new Score("Simon", 2000));
             HighscoreList.AddScore(new Score("Simon", 3000));
@@ -26,6 +27,15 @@ namespace OOP_Oevelse_2
             Console.WriteLine();
             Score myScore = new Score("Simon", 42);
             Console.WriteLine(myScore);
+            */
+
+            Zoo simonsZoo = new Zoo();
+            simonsZoo.AddAnimal(new Tiger("Misser", 50, 4, 7, 42));
+            simonsZoo.AddAnimal(new Parrot("Pip", 10, 2, 40, 10, true));
+            simonsZoo.AddAnimal(new Parrot("Hans", 10, 2, 40, 10, true));
+            simonsZoo.AddAnimal(new Parrot("Tweety", 10, 2, 40, 10, true));
+            simonsZoo.Feed(simonsZoo.cage[1]);
+
             Console.ReadKey();
         }
     }

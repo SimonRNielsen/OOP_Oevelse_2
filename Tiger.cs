@@ -10,12 +10,12 @@ namespace OOP_Oevelse_2
     {
         private int strength;
 
-        Tiger(string name, int health, int legs, int age, int strength) : base(name, health, legs, age)
+        public Tiger(string name, int health, int legs, int age, int strength) : base(name, health, legs, age)
         {
-            this.name = name;
-            this.health = health;
-            this.legs = legs;
-            this.age = age;
+            base.name = name;
+            base.health = health;
+            base.legs = legs;
+            base.age = age;
             this.strength = strength;
         }
 
