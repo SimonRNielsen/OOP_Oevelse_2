@@ -10,7 +10,7 @@ namespace OOP_Oevelse_2
     {
         static void Main(string[] args)
         {
-            int test;
+            
         }
     }
 }
