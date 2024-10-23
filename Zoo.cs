@@ -8,7 +8,7 @@ namespace OOP_Oevelse_2
 {
     internal class Zoo
     {
-        //Burde være public
+        //Burde være private ifølge klassediagram
         public Animal[] cage = new Animal[1];
 
         public void AddAnimal(Animal animal)

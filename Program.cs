@@ -34,7 +34,7 @@ namespace OOP_Oevelse_2
             simonsZoo.AddAnimal(new Parrot("Pip", 10, 2, 40, 10, true));
             simonsZoo.AddAnimal(new Parrot("Hans", 10, 2, 40, 10, true));
             simonsZoo.AddAnimal(new Parrot("Tweety", 10, 2, 40, 10, true));
-            simonsZoo.Feed(simonsZoo.cage[1]);
+            simonsZoo.Feed(simonsZoo.cage[0]);
 
             Console.ReadKey();
         }
